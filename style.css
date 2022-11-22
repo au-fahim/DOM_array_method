@@ -52,6 +52,7 @@ main.mainBody h2 {
 
 main.mainBody {
   min-width: 50%;
+  height: 60vh;
 }
 
 .person {
