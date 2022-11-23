@@ -54,7 +54,7 @@ main.mainBody {
   min-width: 50%;
   height: 60vh;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding-right: 1rem;
 }
 
