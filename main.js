@@ -5,9 +5,11 @@ const showMillionaireBtn = document.querySelector(".show_millionaires");
 const sortingBtn = document.querySelector(".sort");
 const totalBtn = document.querySelector(".total_wealth");
 
-// store Data
+// store Data on the data array
 let data = [];
 
+// Defalt user
+getRandomUser(data);
 getRandomUser(data);
 getRandomUser(data);
 getRandomUser(data);
@@ -16,6 +18,9 @@ getRandomUser(data);
 async function getRandomUser() {
   const res = await fetch("https://randomuser.me/api");
   const data = await res.json();
+
+  console.log(res);
+  console.log(data);
 
   const user = data.results[0];
 
